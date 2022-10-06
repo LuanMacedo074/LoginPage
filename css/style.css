@@ -1,0 +1,40 @@
+ body{
+    background-color: rgb(106, 120, 199);
+    padding: 50px 0;
+
+ }
+
+#loginform{
+    margin: auto;
+    justify-content: center;
+    background-color: lightgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+}
+
+#regbox{
+   text-align: center;
+   padding: 6px;
+   margin: auto;
+   width: 448px;
+   height: 30px;
+   background-color: rgb(170, 170, 170);
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+ #loginico{
+    width: 80px;
+    padding-bottom: 10px;
+ }
+
+ #inputcamps{
+    padding: 15px;
+
+ }
