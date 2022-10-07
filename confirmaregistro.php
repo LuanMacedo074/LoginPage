@@ -7,7 +7,6 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/confirm.js"></script>
 </head>
 <body>
     <?php 
@@ -43,7 +42,7 @@
         
         $caminhoArq = "db/usersdata.json";
         $dataAtual = readJson($caminhoArq);
-        $user = createArray($_POST["username"], $_POST["password"]);
+        $user = createArray(strtolower($_POST["username"]), $_POST["password"]);
         $newData = appendArray($dataAtual, $user);
         writeJson($newData, $caminhoArq);
         header("location: index.php")

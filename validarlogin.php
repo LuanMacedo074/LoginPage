@@ -16,7 +16,7 @@
         $arraydef = json_decode(file_get_contents("db/usersdata.json"), TRUE);
         $profile = [
         ];
-        $profile += ["login" => $_POST["username"]];
+        $profile += ["login" => strtolower($_POST["username"])];
         $profile += ["senha" => $_POST["password"]];
         $c = 0;
         foreach($arraydef as $ar){
