@@ -20,6 +20,10 @@ $(document).ready(function(){
           $("#p").replaceWith("<section id='p'></section>");
           $("#p").append('OS EMAILS NÃO COINCIDEM');
         }
-      });
+      })
+    $( "#btn4" ).click(function() {
+      $( "#registro").hide(),
+      $( "#login").show()})
+
 
   }); 

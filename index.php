@@ -31,6 +31,7 @@
                 <input class = "entrybox" type="email" id="email" name="email" placeholder="exemplo@dominio.com" required> <br>
                 <input class = "entrybox" type="email" id="confirmemail" name="confirmemail" placeholder="exemplo@dominio.com" required>
                 <button class = "submitbuttons" type="submit" id='btn1'>ENVIAR</button>
+                <button class = "submitbuttons" type="button" id='btn4'>VOLTAR</button>
                 <section id="p"></section>
             </form>
         </div>
