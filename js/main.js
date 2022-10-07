@@ -19,8 +19,6 @@ $(document).ready(function(){
         } else if (confirmaemail != email){
           $("#p").replaceWith("<section id='p'></section>");
           $("#p").append('OS EMAILS NÃO COINCIDEM');
-        } else {
-          window.location.replace("resetPassword.php");
         }
       });
 

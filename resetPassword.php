@@ -14,18 +14,18 @@
         <form>
             <img id="loginico" src="imgs/loginicon.png"> <br>
             <div id="resetPass">
-                <label>ALTERAR SENHA</label> <br>
+                <label class = "headertext">RECOVERY PASSWORD</label> <br>
                 <label for="senha">SENHA:</label>
-                <input type="password" id="senha" name="senha" required> <br>
+                <input class = "entrybox" type="password" id="senha" name="senha" required> <br>
                 <label for="confirmsenha">CONFIRMAR SENHA :</label>
-                <input type="password" id="confirmsenha" name="confirmsenha" required>
-                <button type="button" id='btn2'>ENVIAR</button>
+                <input class = "entrybox" type="password" id="confirmsenha" name="confirmsenha" required>
+                <button id="submitbuttons" type="button" id='btn2'>ENVIAR</button>
                 <section id="p"></section>
             </div>
         </form>
     </div>
     <div id="regbox">
-        <section id="testeregistro"><label>NÃO POSSUI CONTA ?</label> <a href="registro.php">CADASTRE-SE AQUI</a></section>
+    <section id="textregistro"><label>NÃO POSSUI CONTA ?</label> <a  class="reflink" href="registro.php">CADASTRE-SE AQUI</a></section>
     </div>
 </body>
 </html>

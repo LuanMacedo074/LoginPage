@@ -33,3 +33,12 @@ function validarForm() {
         return false
     }
  }
+
+ function validarEmail() {
+    if (c == 0){
+        return true;
+
+    } else{
+        return false
+    }
+ }

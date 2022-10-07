@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <div id="loginform">
@@ -23,17 +22,18 @@
             if ($profile == $ar){
                 $c += 1;
                 if (! array_key_exists("remember", $_POST)){
-                echo "Parabéns, você está logado, porém será desconectado caso a sessão fique inativa.";}else{
-                echo "Parabéns, você está logado e continuará conectado.";
+                echo "<section id='logtext'>Parabéns, você está logado, porém será desconectado caso a sessão fique inativa.</section>";}else{
+                echo "<section id='logtext'>Parabéns, você está logado e continuará conectado.</section>";
             }}};
         if ($c == 0){
-          echo "Usuário e senha não encontrados";
+          echo "<section id='logtext'>Usuário e senha não encontrados</section>";
         };
         ?>
+        <button class = "submitbuttons" type="button " onclick="location.href='index.php'">VOLTAR</button><br>
         
     </div>
     <div id="regbox">
-        <section id="testeregistro"><label>NÃO POSSUI CONTA ?</label> <a href="registro.php">CADASTRE-SE AQUI</a></section>
+    <?php echo sprintf("<section id='textregistro'><label>CONECTADO COMO %s</label>", strtoupper($profile["login"])) ?>
     </div>
 </body>
 </html>
