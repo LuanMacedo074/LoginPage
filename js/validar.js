@@ -2,11 +2,9 @@ var c = 0;
 $(document).ready(function(){
    $.getJSON("./db/usersdata.json", function(json) {
     user = {login: "", senha: ""}
-    console.log(user);
     $( "#btn3").click(function(){
         if (document.getElementById("username").value && document.getElementById("password").value){
             user.login = document.getElementById("username").value.toLowerCase();
-            console.log(user);
             counter = 0;
             json.forEach(data => {
                 if (user.login == data.login) {
@@ -35,10 +33,16 @@ function validarForm() {
  }
 
  function validarEmail() {
-    if (c == 0){
-        return true;
-
-    } else{
-        return false
-    }
+        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var email = document.getElementById("email").value;
+        var confirmaemail = document.getElementById("confirmemail").value;
+        if (email.match(validRegex) && confirmaemail.match(validRegex) && email == confirmaemail) {
+          return true;
+      
+        } else {
+      
+          return false;
+      
+        }
+      
  }

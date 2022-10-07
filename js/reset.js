@@ -7,13 +7,13 @@ $(document).ready(function(){
           $("#p").append("Prencha os campos corretamente");
         } else if (! senha){
           $("#p").replaceWith("<section id='p'></section>");
-          $("#p").append('Prencha o campo "senha"');
+          $("#p").append('Prencha o campo "SENHA"');
         } else if (! confirmasenha){
           $("#p").replaceWith("<section id='p'></section>");
-          $("#p").append('Prencha o campo "CONFIRMAR senha"');
+          $("#p").append('Prencha o campo "CONFIRMAR SENHA"');
         } else if (confirmasenha != senha){
           $("#p").replaceWith("<section id='p'></section>");
-          $("#p").append('OS senhaS NÃO COINCIDEM');
+          $("#p").append('AS SENHAS NÃO COINCIDEM');
         } else {
           $("#p").replaceWith("<section id='p'></section>");
           $("#p").append('SENHA RESETADA');;

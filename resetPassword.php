@@ -15,11 +15,9 @@
             <img id="loginico" src="imgs/loginicon.png"> <br>
             <div id="resetPass">
                 <label class = "headertext">RECOVERY PASSWORD</label> <br>
-                <label for="senha">SENHA:</label>
-                <input class = "entrybox" type="password" id="senha" name="senha" required> <br>
-                <label for="confirmsenha">CONFIRMAR SENHA :</label>
-                <input class = "entrybox" type="password" id="confirmsenha" name="confirmsenha" required>
-                <button id="submitbuttons" type="button" id='btn2'>ENVIAR</button>
+                <input class = "entrybox" type="password" id="senha" name="senha" placeholder="SENHA" required> <br>
+                <input class = "entrybox" type="password" id="confirmsenha" name="confirmsenha" placeholder="CONFIRMAR SENHA" required>
+                <button class="submitbuttons" type="button" id='btn2'>ENVIAR</button>
                 <section id="p"></section>
             </div>
         </form>
